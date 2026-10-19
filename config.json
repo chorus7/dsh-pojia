@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "note": "dsh-pojia 技能配置。modules 为当前生效的模块列表，按数组中顺序拼接。改完即刻生效，无需重启 DSH。",
+  "identity": "欧了",
+  "modules": [
+    "core",
+    "output",
+    "scope",
+    "ladder"
+  ],
+  "profiles": {
+    "base": [
+      "core",
+      "output",
+      "scope",
+      "ladder"
+    ],
+    "web": [
+      "core",
+      "output",
+      "scope",
+      "ladder",
+      "web-pentest"
+    ],
+    "reverse": [
+      "core",
+      "output",
+      "scope",
+      "ladder",
+      "reverse"
+    ],
+    "malware": [
+      "core",
+      "output",
+      "scope",
+      "ladder",
+      "malware"
+    ],
+    "social": [
+      "core",
+      "output",
+      "scope",
+      "ladder",
+      "social"
+    ],
+    "game": [
+      "core",
+      "output",
+      "scope",
+      "ladder",
+      "game"
+    ],
+    "adult": [
+      "core",
+      "output",
+      "scope",
+      "ladder",
+      "adult"
+    ],
+    "full": [
+      "core",
+      "output",
+      "scope",
+      "ladder",
+      "web-pentest",
+      "reverse",
+      "malware",
+      "social",
+      "game",
+      "adult"
+    ]
+  }
+}

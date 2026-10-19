@@ -1,0 +1,53 @@
+{
+  "name": "dsh-pojia",
+  "version": "1.0.0",
+  "release": "2026-10-19",
+  "title": "DSH 破甲模块化技能",
+  "description": "DeepSeek Harness 破甲模块化技能：十模块八预设，支持选择性注入 / Modular jailbreak skill for DSH",
+  "identity": "欧了",
+  "modules": 10,
+  "presets": 8,
+  "entry": "SKILL.md",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-skill",
+    "deepseek-harness",
+    "jailbreak",
+    "prompt-engineering",
+    "red-team",
+    "modular-prompt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chorus7/dsh-pojia.git"
+  },
+  "homepage": "https://github.com/chorus7/dsh-pojia#readme",
+  "bugs": {
+    "url": "https://github.com/chorus7/dsh-pojia/issues"
+  },
+  "scripts": {
+    "check": "node --check select.mjs && node --check selfcheck.mjs && node --check build.mjs",
+    "selfcheck": "node selfcheck.mjs .",
+    "build": "node build.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "install": {
+    "dsh": "解压到 $DSH_HOME/skills/dsh-pojia/",
+    "other": "用 dist/dsh-pojia-prompt-*.md 贴进任意模型的 system prompt"
+  },
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "config.json",
+    "select.mjs",
+    "selfcheck.mjs",
+    "build.mjs",
+    "prompts/",
+    "docs/"
+  ]
+}

@@ -1,0 +1,15 @@
+# 统一换行符：仓库内一律 LF，避免 Windows 检出 CRLF 后 Linux CI 报错
+* text=auto eol=lf
+
+# 脚本与配置强制 LF
+*.mjs text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+
+# 二进制
+*.zip binary
+*.png binary
+*.jpg binary
